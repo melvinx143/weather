@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+  </head>
+  <link rel="stylesheet" href="./weather.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <h1>Weather APP</h1>
+    <div class="searchsection">
+      <input type="text" class="city" placeholder="Search Your city" />
+      <button onclick="weathers()">Search</button>
+    </div>
+
+    <div class="todaystemp">
+      <div class="todaytemp">
+        <h1>Temperature:</h1>
+        <h1 class="ttemp">17<span>Celsius</span></h1>
+      </div>
+      <h1>City:<span class="citysearched">Hyderabad</span></h1>
+      <div class="inside_content">
+        <!---WIND-->
+        <div class="weather">
+          <h4 class="title">Winds</h4>
+          <div class="innerstats">
+            <div class="icon"><i class="fa-solid fa-wind"></i></div>
+            <div class="winds">13</div>
+            <span>Km/Hr</span>
+          </div>
+        </div>
+        <!------------->
+        <!---- CLOUD------->
+        <div class="weather">
+          <h4 class="title">Cloud</h4>
+          <div class="innerstats">
+            <div class="icon"><i class="fa-solid fa-cloud"></i></div>
+            <div class="cloudy">Fog</div>
+          </div>
+        </div>
+        <!------------------>
+        <!---- Maximum Temp------->
+        <div class="weather">
+          <h4 class="title">Max Temp</h4>
+          <div class="innerstats">
+            <div class="icon"><i class="fa-solid fa-temperature-full"></i></div>
+            <div class="maxtemp">13</div>
+            <span>Deg</span>
+          </div>
+        </div>
+        <!------------------>
+        <!---- Min Temp------->
+        <div class="weather">
+          <h4 class="title">Min Temp</h4>
+          <div class="innerstats">
+            <div class="icon">
+              <i class="fa-solid fa-temperature-empty"></i>
+            </div>
+            <div class="mintemp">13</div>
+            <span>Deg</span>
+          </div>
+        </div>
+        <!------------------>
+        <!----  Humidity------->
+        <div class="weather">
+          <h4 class="title">Humidity</h4>
+          <div class="innerstats">
+            <div class="icon"><i class="fa-solid fa-droplet"></i></div>
+            <div class="humidity">13</div>
+          </div>
+        </div>
+        <!------------------>
+        <!---- feels like  ------->
+        <div class="weather">
+          <h4 class="title">Feels Like</h4>
+          <div class="innerstats">
+            <div class="icon"><i class="fa-solid fa-feather-pointed"></i></div>
+            <div class="feelslike">13</div>
+            <span>Deg</span>
+          </div>
+        </div>
+        <!------------------>
+      </div>
+    </div>
+    <script src="./weather.js"></script>
+  </body>
+</html>

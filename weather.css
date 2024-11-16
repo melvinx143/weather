@@ -1,0 +1,116 @@
+
+    h1{
+        text-align: center;
+    }
+    .weather
+    {
+       
+        width:350px;
+        height:300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding:2px;
+        flex-wrap: wrap;
+        border-radius: 22px;
+        backdrop-filter:blur(10px);
+        box-shadow: 12px 12px 12px #808080;
+    }
+    body{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        background: url('./weather.jpg');
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:#ffffff;
+    }
+    .innerstats
+    {
+        display:flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .innerstats{
+        font-size: 22px;
+        font-weight: bold;
+        color:#ffffff;
+    }
+    .inside_content
+    {
+        display:grid;
+      grid-template-columns: repeat(3,500fr);
+      align-items: center;
+      justify-content: space-around;
+      gap:2rem;
+      flex-wrap: wrap;
+    }
+    .ttemp
+    {
+        color:rgba(255, 183, 0, 0.507);
+    }
+    .todaystemp
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+       
+    }
+    .todaytemp
+    {
+        display:flex;
+        gap:1rem;
+        flex-wrap: wrap;
+        width:400px;
+        text-align: center;
+        backdrop-filter: blur(50px);
+        justify-content: center;
+        }
+    .title
+    {
+        font-size: 33px;
+        color:antiquewhite;
+    }
+    .citysearched
+    {
+        color:rgba(255, 204, 0, 0.815);
+    }
+    .searchsection
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    input,button{
+        padding:10px;
+        font-weight: bold;
+    }
+    @media(width<912px)
+    {
+       .todaystemp
+       {
+        display:flex;
+        flex-direction: column;
+       } 
+       .inside_content
+       {
+        display:flex;
+        flex-direction: column;
+       }
+       .weather{
+        width:250px;
+       }
+       @media(width>360px)
+       {
+        .weather{
+        width:400px;
+       }
+    }
+    }
